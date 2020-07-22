@@ -1,0 +1,43 @@
+// @font-face {
+//     font-family: "SF UI Display";
+//     src: url('sf-ui-display-semibold-58646eddcae92.otf') format('opentype'); 
+//     font-weight: 600;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: "SF UI Display";
+//     src: url('sf-ui-display-bold-58646a511e3d9.otf') format('opentype'); 
+//     font-weight: 700;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: "SF UI Display";
+//     src: url('sf-ui-display-light-58646b33e0551.otf') format('opentype'); 
+//     font-weight: 400;
+//     font-style: normal;
+// }
+
+
+@font-face {font-family: "SF UI Display";
+    src: url("../fonts/regular/b9f4fba805372d012dc98a3bca4d5237.eot"); /* IE9*/
+    src: url("../fonts/regular/b9f4fba805372d012dc98a3bca4d5237.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/regular/b9f4fba805372d012dc98a3bca4d5237.woff2") format("woff2"), /* chrome、firefox */
+    url("../fonts/regular/b9f4fba805372d012dc98a3bca4d5237.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/regular/b9f4fba805372d012dc98a3bca4d5237.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../fonts/regular/b9f4fba805372d012dc98a3bca4d5237.svg#SFUIDisplay-Regular") format("svg"); /* iOS 4.1- */
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {font-family: "SF UI Display";
+    src: url("../fonts/SFUIDisplay-Bold/SFUIDisplay-Bold.eot"); /* IE9*/
+    src: url("../fonts/SFUIDisplay-Bold/SFUIDisplay-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/SFUIDisplay-Bold/SFUIDisplay-Bold.woff2") format("woff2"), /* chrome、firefox */
+    url("../fonts/SFUIDisplay-Bold/SFUIDisplay-Bold.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/SFUIDisplay-Bold/SFUIDisplay-Bold.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../fonts/SFUIDisplay-Bold/SFUIDisplay-Bold.svg#SFUIDisplay-Regular") format("svg"); /* iOS 4.1- */
+    font-weight: bold;
+    font-style: normal;
+  }

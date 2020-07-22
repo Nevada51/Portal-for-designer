@@ -1,0 +1,39 @@
+body {
+  background-color: black;
+}
+
+.services-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 835px;
+  height: 500px;
+}
+
+.nav-container .slick-current img {
+  -webkit-box-shadow: 0 0 4px 2px rgba(108, 232, 220, 0.9);
+          box-shadow: 0 0 4px 2px rgba(108, 232, 220, 0.9);
+}
+
+.slider-main {
+  width: 100%;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 715px;
+}
+
+.nav-container img {
+  max-height: 135px;
+}
+
+.nav-container .slick-slide {
+  max-height: 135px;
+  margin-bottom: 18px;
+}
+
+.services-slider .slick-track {
+  margin-left: 50px;
+}
+/*# sourceMappingURL=product-page-slide.css.map */

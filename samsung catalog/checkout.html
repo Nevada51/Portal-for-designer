@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чекаут</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css" />
+    <link href="https://fonts.cdnfonts.com/css/sf-ui-display" rel="stylesheet">
+</head>
+
+<body>
+    <header class='header'>
+        <div class="content-wrapper">
+            <div class="header_container">
+                <div class="hamburger-menu">
+                    <span></span>
+                  </div>
+                <div class="protoria_logo">
+                    <a href="#">
+                        <img src="images/protoria_logo.svg" alt="">
+                    </a>  
+                </div>
+                <div class="samsung_logo">
+                    <a href="#">
+                        <img src="images/samsung_logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="cabinet_btns">
+                    <a href="#" class="btn profile"><img src="images/presonal_cab.svg" alt=""></a>
+                    <a href="#" class="btn basket">
+                        <img src="images/basket.svg" alt="">
+                        <div class="product-counter">2</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="content-wrapper">
+            <h2 class="checkout_title">Оформление заказа</h2>
+            <div class="checkout_wrapper">
+                <div class="left_side">
+                    <div class="step one">
+                        <h3 class="step_title">1. Контактные данные</h3>
+                        <div class="field_wrapper">
+                            <p class="field_title">Имя</p>
+                            <input type="text" placeholder="Введите имя">
+                        </div>
+                        <div class="field_wrapper">
+                            <p class="field_title">Фамилия</p>
+                            <input type="text" placeholder="Введите фамилию">
+                        </div>
+                        <div class="field_wrapper">
+                            <p class="field_title">Отчество</p>
+                            <input type="text" placeholder="Введите отчество">
+                        </div>
+                        <div class="contacts-wrapper">
+                            <div class="field_wrapper">
+                                <p class="field_title">E-mail</p>
+                                <input type="email" placeholder="Введите E-mail">
+                            </div>
+                            <div class="field_wrapper">
+                                <p class="field_title">Телефон</p>
+                                <input type="text" placeholder="+38 (___) ___ - __ - __">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step two">
+                        <h3 class="step_title">2. Доставка</h3>
+                        <div class="field_wrapper">
+                            <p class="field_title">Город доставки</p>
+                            <input type="text" placeholder="Введите город" id="autocomplete">
+                        </div>
+                        <div class="field_wrapper">
+                            <p class="field_title">Способ доставки</p>
+                            <select>
+                                <option>Новая почта</option>
+                                <option>Укрпочта</option>
+                                <option>Justin </option>
+                                <option>FedEx</option>
+                                <option disabled selected>Выбрать</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="step three">
+                        <h3 class="step_title">3. Оплата</h3>
+                        <div class="field_wrapper">
+                            <p class="field_title">Способ оплаты</p>
+                            <select>
+                                <option>Приват24</option>
+                                <option>LiqPay </option>
+                                <option>Monobank</option>
+                                <option>Курер</option>
+                                <option disabled selected>Выбрать</option>
+                            </select>
+                            <span class="additional_info">
+                                Оплата наличными доступна, если стоимость товара не больше 49999 грн
+                            </span>
+                        </div>
+                        <div class="field_wrapper">
+                            <p class="field_title">Комментарий</p>
+                            <textarea placeholder="Ваш комментарий..." cols="30" rows="5"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_side">
+                    <div class="cart-prev">
+                        <div class="cart-prev_top">
+                            <div class="cart-prev_title">Ваш заказ</div>
+                            <div class="cart-prev_counter">(3 товара)</div>
+                            <div class="show-full-prew"></div>
+                        </div>
+                        <div class="cart-prev_list">
+                            <div class="cart-prev_item">
+                                <div class="cart-prev_img">
+                                    <img src="images/item.jpg" alt="">
+                                </div>
+                                <div class="cart-prev_info">
+                                    <p class="cart-prev_name">Телевизор Samsung QE32LS03TBKXUA Frame</p>
+                                    <div class="cart-prev_quantity">1 шт.</div>
+                                    <div class="cart-prev_price">16 999 <span class="cart-prev_price_curency">грн.</span></div>
+                                </div>
+                                <div class="cart-prev_delete"><a href=""></a></div>
+                            </div>
+                            <div class="cart-prev_item">
+                                <div class="cart-prev_img">
+                                    <img src="images/item.jpg" alt="">
+                                </div>
+                                <div class="cart-prev_info">
+                                    <p class="cart-prev_name">Телевизор Samsung Frame QE65LS03RAUXUA</p>
+                                    <div class="cart-prev_quantity">2 шт.</div>
+                                    <div class="cart-prev_price">120 598 <span class="cart-prev_price_curency">грн.</span></div>
+                                </div>
+                                <div class="cart-prev_delete"><a href=""></a></div>
+                            </div>
+                        </div>
+                        <div class="cart-prev_final-price">
+                            <span>Итого:</span>
+                            <div class="cost">137 597 <span class="cost_curency"> грн.</span></div>
+                        </div>
+                        <a href="#" class="cart-prev_btn">
+                            Подтвердить заказ
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="content-wrapper">
+          <div class="protoria_logo">
+            <a href="#">
+                <img src="images/protoria_logo.svg" alt="">
+            </a>  
+          </div>
+          <p class="copyright">© 2020 All Rights Reserved</p>
+          <ul class="footer-menu-list">
+            <li class="menu-item"><a href="#">Каталог</a></li>
+            <li class="menu-item"><a href="#">Личный кабинет</a></li>
+          </ul>
+        </div>
+    </footer>
+    <div class="mobile-menu">
+        <div class="mobile-menu_top">
+          <div class="close"></div>
+          <a href="#" class="exit">Выход</a>
+        </div>
+        <ul class="mobile-menu_list">
+          <li class="mobile-menu_item active">Все товары</li>
+          <li class="mobile-menu_item">The Frame</li>
+          <li class="mobile-menu_item">The Serif</li>
+          <li class="mobile-menu_item">The Sero</li>
+          <li class="mobile-menu_item">8К</li>
+          <li class="mobile-menu_item">4К</li>
+        </ul>
+    </div>
+    <div class="overlay">
+    </div>
+    <div class="pop-up order-list-wrapper">
+        <div class="basket order-list">
+            <h3><span>Номер заказа</span> 2643128</h3>
+            <ul class="product-list">
+                <li class="product-item">
+                    <div class="product-item_img">
+                        <img src="images/item.jpg" alt="">
+                    </div>
+                    <p class="product-item_name">Телевизор Samsung QE32LS03TBKXUA Frame</p>
+
+                    <p class="product-item_quality">1 шт.</p>
+
+                    <div class="product-item_price">16 999 <span class="product-item_curency">грн.</span></div>
+                </li>
+                <li class="product-item">
+                    <div class="product-item_img">
+                        <img src="images/item2.jpg" alt="">
+                    </div>
+                    <p class="product-item_name">Телевизор Samsung Frame QE65LS03RAUXUA</p>
+
+                    <p class="product-item_quality">1 шт.</p>
+
+                    <div class="product-item_price">120 598  <span class="product-item_curency">грн.</span></div>
+
+                </li>
+            </ul>
+            <div class="basket_final-sum">
+                <p>Итого:</p>137 597 <span class="curency">грн</span>
+            </div>
+            <p class="basket-bottom">
+                Спасибо за заказ! <br>Ожидайте звонок менеджера для подтверждения.
+            </p>
+            <div class="basket_close"></div>
+        </div>
+    </div>
+    <div class="pop-up exit_popup">
+        <div class="basket logout">
+            <h3 class="pop-up_title">Выйти из магазина?</h3>
+            <div class="btn_wrapp">
+                <a class="pop-up_btn back">Отмена</a>
+                <a class="pop-up_btn outline">выйти</a>
+            </div>
+        </div>
+    </div>
+    <div class="pop-up basket-wrapper">
+        <div class="basket">
+            <h3 class="basket_title">Корзина</h3>
+            <ul class="product-list">
+                <li class="product-item">
+                    <div class="product-item_img">
+                        <img src="images/item.jpg" alt="">
+                    </div>
+                    <p class="product-item_name">Телевизор Samsung QE32LS03TBKXUA Frame</p>
+                    <div class="product-item_btns">
+
+                        <button type="button" class="button minus" data-quantity="minus" data-field="quantity">
+                        </button>
+    
+                        <input class="input-group-field" type="number" name="quantity" value="0">
+
+                        <button type="button" class="button plus" data-quantity="plus" data-field="quantity">
+                        </button>
+                    </div>
+                    <div class="product-item_price">16 999 <span class="product-item_curency">грн.</span></div>
+                    <div class="product-item_delet">
+                        <img src="images/basket_delete.svg" alt="">
+                    </div>
+                </li>
+                <li class="product-item">
+                    <div class="product-item_img">
+                        <img src="images/item.jpg" alt="">
+                    </div>
+                    <p class="product-item_name">Телевизор Samsung Frame QE65LS03RAUXUA</p>
+                    <div class="product-item_btns">
+
+                        <button type="button" class="button minus" data-quantity="minus" data-field="quantity">
+                        </button>
+    
+                        <input class="input-group-field" type="number" name="quantity" value="0">
+
+                        <button type="button" class="button plus" data-quantity="plus" data-field="quantity">
+                        </button>
+                    </div>
+                    <div class="product-item_price">120 598  <span class="product-item_curency">грн.</span></div>
+                    <div class="product-item_delet">
+                        <img src="images/basket_delete.svg" alt="">
+                    </div>
+                </li>
+            </ul>
+            <div class="basket_final-sum">
+                <p>Итого:</p>137 597 <span class="curency">грн</span>
+            </div>
+            <div class="basket_buy">
+                Оформить заказ
+            </div>
+            <div class="basket_close"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="libs/slick/slick.min.js"></script>
+    <script type="text/javascript" src="libs/jquery.autocomplete.js"></script>
+    <script src="script.js" async></script>
+</body>
+
+</html>
