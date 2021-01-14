@@ -74,7 +74,7 @@ $accent-color: #2E569F;
         }
     } 
     // ----- список категорій ----
-    .categorys-list{
+    .categories-list{
         &_item{
             font-size: 16px;
             line-height: 24px;
@@ -791,7 +791,6 @@ $accent-color: #2E569F;
         }
     }
 }
-
 @media (max-width: 767px) {
     .content-wrapper{
         padding: 0 16px;
@@ -996,7 +995,7 @@ $accent-color: #2E569F;
     } 
 
     // ----- список категорій ----
-    .categorys-list{
+    .categories-list{
         display: none;
         &_item{
             font-size: 16px;

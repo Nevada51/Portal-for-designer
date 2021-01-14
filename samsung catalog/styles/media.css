@@ -58,7 +58,7 @@
     line-height: 17px;
     margin-right: 20px;
   }
-  .categorys-list_item {
+  .categories-list_item {
     font-size: 16px;
     line-height: 24px;
     padding: 12px 20px;
@@ -972,10 +972,10 @@
     margin-right: 0;
     margin-top: 20px;
   }
-  .categorys-list {
+  .categories-list {
     display: none;
   }
-  .categorys-list_item {
+  .categories-list_item {
     font-size: 16px;
     line-height: 24px;
     padding: 12px 20px;

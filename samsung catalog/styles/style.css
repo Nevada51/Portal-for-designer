@@ -218,14 +218,14 @@ body {
   display: none;
 }
 
-.categorys-list {
+.categories-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid #E7E7E7;
 }
 
-.categorys-list_item {
+.categories-list_item {
   font-size: 20px;
   line-height: 30px;
   padding: 15px 30px;
@@ -237,7 +237,7 @@ body {
   bottom: -1px;
 }
 
-.categorys-list_item::before {
+.categories-list_item::before {
   content: '';
   width: 0;
   height: 0;
@@ -256,33 +256,33 @@ body {
   transition: all .3s;
 }
 
-.categorys-list_item:hover {
+.categories-list_item:hover {
   color: #2E569F;
   border-bottom: 2px solid #2E569F;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 
-.categorys-list_item:hover::before {
+.categories-list_item:hover::before {
   opacity: 1;
 }
 
-.categorys-list_item:hover a {
+.categories-list_item:hover a {
   color: #2E569F;
 }
 
-.categorys-list_item.active {
+.categories-list_item.active {
   color: #2E569F;
   border-bottom: 2px solid #2E569F;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 
-.categorys-list_item.active::before {
+.categories-list_item.active::before {
   opacity: 1;
 }
 
-.categorys-list_item a {
+.categories-list_item a {
   color: #333440;
   text-decoration: none;
 }
@@ -2898,7 +2898,7 @@ footer .footer-menu-list li:hover a {
     line-height: 17px;
     margin-right: 20px;
   }
-  .categorys-list_item {
+  .categories-list_item {
     font-size: 16px;
     line-height: 24px;
     padding: 12px 20px;
@@ -3812,10 +3812,10 @@ footer .footer-menu-list li:hover a {
     margin-right: 0;
     margin-top: 20px;
   }
-  .categorys-list {
+  .categories-list {
     display: none;
   }
-  .categorys-list_item {
+  .categories-list_item {
     font-size: 16px;
     line-height: 24px;
     padding: 12px 20px;
