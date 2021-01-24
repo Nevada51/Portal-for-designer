@@ -8,6 +8,8 @@
     <link href="styles/style.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="libs/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,13 +18,36 @@
             <div class="header_container">
                 <div class="hamburger-menu">
                     <span></span>
-                  </div>
-                <div class="protoria_logo">
-                    <a href="#">
-                        <object type="image/svg+xml" data="images/protoria_logo.svg" width="100%" height="100%" >
-                            <img src="images/protoria_logo.svg" alt="">
-                        </object>
-                    </a>  
+                </div>
+                <div class="left-side">
+                    <div class="protoria_logo ">
+                        <a href="#">
+                            <object type="image/svg+xml" data="images/protoria_logo.svg" width="100%" height="100%">
+                                <img src="images/protoria_logo.svg" alt="">
+                            </object>
+                        </a>
+                    </div>
+                    <div class="project-support">
+                        <div class="flex-row">
+                            <img src="images/specialist_name.png" alt="">
+                            <div class="info">
+                                <div>
+                                    <a href="" class="specialist-name">Роман Андросов</a>
+                                    <a href="tel:0504563139" class="phone">050 456 31 39</a>
+                                </div>
+                                <p>Спеціаліст з підтримки дизайнерського проекту.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="info">
+                                <div>
+                                    <span class="hotline">Гаряча лінія</span>
+                                    <a href="tel:0800303707" class="phone">0 800 303 707</a>
+                                </div>
+                                <p>Оформлення замовлення, доставка, методи оплати</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="samsung_logo">
                     <a href="#">
@@ -44,19 +69,19 @@
             <div class="content-wrapper">
                 <ul class="categories-list">
                     <div class="categories-list_item">
-                        <a href="">Все товары</a> 
+                        <a href="">Все товары</a>
                     </div>
                     <div class="categories-list_item">
-                       <a href="">The Frame</a> 
+                        <a href="">The Frame</a>
                     </div>
                     <div class="categories-list_item">
-                       <a href="">The Serif</a> 
+                        <a href="">The Serif</a>
                     </div>
                     <div class="categories-list_item">
-                       <a href="">8К</a> 
+                        <a href="">8К</a>
                     </div>
                     <div class="categories-list_item">
-                       <a href="">4К</a> 
+                        <a href="">4К</a>
                     </div>
                 </ul>
             </div>
@@ -80,10 +105,10 @@
                                         <input class="control-start" name="price-start" id="price-start">
                                         <input class="control-end" name="price-end" id="price-end">
                                     </div>
-                                    
+
                                     <div class="price-slider"></div>
                                 </div>
-                                
+
                             </div>
                         </div>
                         <div class="products-filters_item">
@@ -119,7 +144,7 @@
                                     </label>
                                     <div class="filter-property_count">(0)</div>
                                 </div>
-      
+
                             </div>
                         </div>
                         <div class="products-filters_item active">
@@ -147,7 +172,7 @@
                                     </label>
                                     <div class="filter-property_count">(0)</div>
                                 </div>
-      
+
                             </div>
                         </div>
                         <div class="products-filters_item">
@@ -195,7 +220,7 @@
                     <div class="products-list_top">
                         <h3>Все товары</h3>
                         <div class="products-list_counter">
-                            (18 товаров) 
+                            (18 товаров)
                         </div>
                         <div class="mobile_filter_btn">
                             <div class="btn">Фильтры</div>
@@ -265,34 +290,59 @@
 
     <footer>
         <div class="content-wrapper">
-          <div class="protoria_logo">
-            <a href="#">
-                <object type="image/svg+xml" data="images/protoria_logo.svg" width="100%" height="100%" >
-                    <img src="images/protoria_logo.svg" alt="">
-                </object>
-            </a>  
-          </div>
-          <p class="copyright">© 2020 All Rights Reserved</p>
-          <ul class="footer-menu-list">
-            <li class="menu-item"><a href="#">Каталог</a></li>
-            <li class="menu-item"><a href="#">Личный кабинет</a></li>
-            <li class="menu-item"><a href="#">Договор</a></li>
-          </ul>
+            <div class="protoria_logo">
+                <a href="#">
+                    <object type="image/svg+xml" data="images/protoria_logo.svg" width="100%" height="100%">
+                        <img src="images/protoria_logo.svg" alt="">
+                    </object>
+                </a>
+            </div>
+            <p class="copyright">© 2020 All Rights Reserved</p>
+            <ul class="footer-menu-list">
+                <li class="menu-item"><a href="#">Каталог</a></li>
+                <li class="menu-item"><a href="#">Личный кабинет</a></li>
+                <li class="menu-item"><a href="#">Договор</a></li>
+            </ul>
         </div>
     </footer>
     <div class="mobile-menu">
         <div class="mobile-menu_top">
-          <div class="close"></div>
-          <a href="#" class="exit">Выход</a>
+            <div class="close"></div>
+            <a href="#" class="exit">Выход</a>
         </div>
         <ul class="mobile-menu_list">
-          <li class="mobile-menu_item active">Все товары</li>
-          <li class="mobile-menu_item">The Frame</li>
-          <li class="mobile-menu_item">The Serif</li>
-          <li class="mobile-menu_item">The Sero</li>
-          <li class="mobile-menu_item">8К</li>
-          <li class="mobile-menu_item">4К</li>
+            <li class="mobile-menu_item active">Все товары</li>
+            <li class="mobile-menu_item">The Frame</li>
+            <li class="mobile-menu_item">The Serif</li>
+            <li class="mobile-menu_item">The Sero</li>
+            <li class="mobile-menu_item">8К</li>
+            <li class="mobile-menu_item">4К</li>
         </ul>
+        <div class="project-support">
+            <div class="flex-row">
+                <img src="images/specialist_name.png" alt="">
+                <div class="info">
+                    <div>
+                        <a href="" class="specialist-name">Роман Андросов</a>
+                        <a class = "bold" href="tel:0504563139" class="phone">050 456 31 39</a>
+                        <a class = "bold" href="mailto:r.androsov@partner.samsung.com ">r.androsov@partner.samsung.com </a>
+                    </div>
+                    <div>
+                        <p>Спеціаліст з підтримки дизайнерського проекту.</p>
+                        <p class="black">Умови співпраці, модельний ряд, доступність, ціни та характеристики</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="info">
+                    <div>
+                        <span class="hotline">Гаряча лінія</span>
+                        <a href="tel:0800303707" class="phone">0 800 303 707</a>
+                    </div>
+                    <p>Оформлення замовлення, доставка, методи оплати</p>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="overlay">
     </div>
@@ -318,7 +368,7 @@
 
                         <button type="button" class="button minus" data-quantity="minus" data-field="quantity">
                         </button>
-    
+
                         <input class="input-group-field" type="number" name="quantity" value="0">
 
                         <button type="button" class="button plus" data-quantity="plus" data-field="quantity">
@@ -338,13 +388,13 @@
 
                         <button type="button" class="button minus" data-quantity="minus" data-field="quantity">
                         </button>
-    
+
                         <input class="input-group-field" type="number" name="quantity" value="0">
 
                         <button type="button" class="button plus" data-quantity="plus" data-field="quantity">
                         </button>
                     </div>
-                    <div class="product-item_price">120 598  <span class="product-item_curency">грн.</span></div>
+                    <div class="product-item_price">120 598 <span class="product-item_curency">грн.</span></div>
                     <div class="product-item_delet">
                         <img src="images/basket_delete.svg" alt="">
                     </div>

@@ -162,6 +162,12 @@ body {
   height: 54px;
 }
 
+.header .left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .header .cabinet_btns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -208,6 +214,80 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: -1;
+}
+
+.header .project-support {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  margin-left: 32px;
+}
+
+.header .project-support img {
+  width: 48px;
+  height: 48px;
+  margin-right: 12px;
+}
+
+.header .project-support > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header .project-support .flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header .project-support .flex-row .info {
+  padding-right: 16px;
+  margin-right: 16px;
+  border-right: 1px solid #e5e5e5;
+}
+
+.header .project-support .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 2px;
+  max-width: 220px;
+}
+
+.header .project-support .info .specialist-name {
+  text-decoration: underline;
+  color: #000000;
+}
+
+.header .project-support .info .phone {
+  font-weight: 600;
+  color: #333440;
+  margin-left: 12px;
+  text-decoration: none;
+}
+
+.header .project-support .info p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 14px;
+  color: #808080;
 }
 
 .hamburger-menu {
@@ -2870,6 +2950,9 @@ footer .footer-menu-list li:hover a {
     width: 132px;
     height: 36px;
   }
+  .header .project-support {
+    display: none;
+  }
   .header .cabinet_btns {
     min-width: 10%;
   }
@@ -3678,7 +3761,13 @@ footer .footer-menu-list li:hover a {
     z-index: 99;
   }
   .mobile-menu.active {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .mobile-menu_top {
     max-width: 100%;
@@ -3723,6 +3812,61 @@ footer .footer-menu-list li:hover a {
     line-height: 17px;
     color: #333440;
     text-decoration: none;
+  }
+  .mobile-menu .project-support {
+    padding: 16px;
+    margin-top: auto;
+  }
+  .mobile-menu .project-support > div {
+    padding-top: 16px;
+    border-top: 1px solid #e5e5e5;
+  }
+  .mobile-menu .project-support img {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+  }
+  .mobile-menu .project-support .flex-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 16px;
+  }
+  .mobile-menu .project-support .flex-row a:last-of-type {
+    width: 100%;
+  }
+  .mobile-menu .project-support .info > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #333440;
+  }
+  .mobile-menu .project-support .info > div .bold {
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .mobile-menu .project-support .info a {
+    text-decoration: none;
+    color: #000;
+  }
+  .mobile-menu .project-support .info p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 14px;
+    margin-bottom: 4px;
+    color: #808080;
+  }
+  .mobile-menu .project-support .info p.black {
+    color: #000;
   }
   .mobile-menu_list {
     display: -webkit-box;

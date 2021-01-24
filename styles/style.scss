@@ -63,6 +63,9 @@ body {
         width: 198px;
         height: 54px;
     }
+    .left-side{
+        display: flex;
+    }
     .cabinet_btns{
         display: flex;
         min-width: 10%;
@@ -99,6 +102,57 @@ body {
                     z-index: -1;
                 }
             }
+        }
+    }
+    .project-support{
+        display: flex;
+
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        line-height: 18px;
+        margin-left: 32px;
+        img{
+            width: 48px;
+            height: 48px;
+            margin-right: 12px;
+        }
+        & > div{
+            display: flex;
+            flex-direction: column;
+        }
+        .flex-row{
+            display: flex;
+            flex-direction: row;
+            .info{
+                padding-right: 16px;
+                margin-right: 16px;
+                border-right: 1px solid #e5e5e5;
+            }
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2px;
+            max-width: 220px;
+
+            .specialist-name{
+                text-decoration: underline;
+                color: #000000;
+            }
+            .phone{
+                font-weight: 600;
+                color: #333440;
+                margin-left: 12px;
+                text-decoration: none;
+            }
+            p{
+                margin: 0;
+                font-weight: 500;
+                font-size: 11px;
+                line-height: 14px;
+                color: #808080;
+            }
+            
         }
     }
 }

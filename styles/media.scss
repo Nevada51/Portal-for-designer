@@ -39,6 +39,9 @@ $accent-color: #2E569F;
             width: 132px;
             height: 36px;
         }
+        .project-support{
+            display: none;
+        }
         .cabinet_btns{
             min-width: 10%;
             .btn{
@@ -816,6 +819,7 @@ $accent-color: #2E569F;
                 height: 22px;
             }
         }
+
     }
     .hamburger-menu {
         display: block;
@@ -888,7 +892,8 @@ $accent-color: #2E569F;
         background-color: #fff;
         z-index: 99;
         &.active{
-            display: block;
+            display: flex;
+            flex-direction: column;
         }
         &_top{
             max-width: 100%;
@@ -925,6 +930,57 @@ $accent-color: #2E569F;
             line-height: 17px;
             color: $primary-color;
             text-decoration: none;
+        }
+        .project-support{
+            padding: 16px;
+            margin-top: auto;
+            & > div{
+                padding-top: 16px;
+                border-top: 1px solid #e5e5e5;
+            }
+            img{
+                width: 40px;
+                height: 40px;
+                margin-right: 12px;
+            }
+            .flex-row{
+                display: flex;
+                margin-bottom: 16px;
+                a:last-of-type{
+                    width: 100%;
+                }
+            }
+            .info{
+                & > div{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 18px;
+                    color: #333440;
+                    .bold{
+                        font-weight: 600;
+                        margin-bottom: 4px;
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    color: #000;
+                }
+                p{
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 500;
+                    font-size: 11px;
+                    line-height: 14px;
+                    margin-bottom: 4px;
+                    color: #808080;
+                    &.black{
+                        color: #000;
+                    }
+                }
+            }
         }
     }
     .mobile-menu_list{
