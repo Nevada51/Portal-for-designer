@@ -160,6 +160,10 @@ body {
 .header .samsung_logo {
   width: 198px;
   height: 54px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .header .left-side {
@@ -223,7 +227,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
   line-height: 18px;
-  margin-left: 32px;
+  margin-left: 22px;
 }
 
 .header .project-support img {
@@ -242,6 +246,10 @@ body {
           flex-direction: column;
 }
 
+.header .project-support > div:last-child .info {
+  max-width: 170px;
+}
+
 .header .project-support .flex-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -250,12 +258,48 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  position: relative;
 }
 
 .header .project-support .flex-row .info {
   padding-right: 16px;
   margin-right: 16px;
   border-right: 1px solid #e5e5e5;
+}
+
+.header .project-support .flex-row .pop-over {
+  position: absolute;
+  top: calc(100% + 12px);
+  z-index: 9;
+  left: 0;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+  background: #FFFFFF;
+  border: 1px solid #E7E7E7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.header .project-support .flex-row .pop-over .pop-over__info {
+  font-size: 12px;
+  line-height: 18px;
+  color: #333440;
+  margin-bottom: 4px;
+}
+
+.header .project-support .flex-row .pop-over .pop-over__info:last-child {
+  margin-bottom: 0;
+}
+
+.header .project-support .flex-row .pop-over.open {
+  overflow: visible;
+  opacity: 1;
 }
 
 .header .project-support .info {
@@ -267,7 +311,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 2px;
-  max-width: 220px;
+  max-width: 210px;
 }
 
 .header .project-support .info .specialist-name {

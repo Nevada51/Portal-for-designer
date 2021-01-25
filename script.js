@@ -245,9 +245,15 @@ $( document ).ready(function() {
     //--- автозаполнение ---
     var langs = ["London", "Lutsk", "Одеса", "Дніпро (Дніпропетровськ)", "Донецьк", "Ніжин"] ;
 
-    $('#autocomplete').devbridgeAutocomplete({
-      // serviceUrl: '/autocomplete/countries',
-      lookup: langs
+
+    if($('.checkout_wrapper').is('#autocomplete')){
+      $('#autocomplete').devbridgeAutocomplete({
+        lookup: langs
+      });
+    }
+
+    $('.specialist-name').click(function() {
+      $('.pop-over').toggleClass('open');
     });
 
 });
