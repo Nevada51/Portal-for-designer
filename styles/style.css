@@ -170,6 +170,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header .cabinet_btns {
@@ -2989,6 +2992,8 @@ footer .footer-menu-list li:hover a {
   .header .protoria_logo {
     max-width: 100px;
     height: 25px;
+    position: relative;
+    left: 40px;
   }
   .header .samsung_logo {
     width: 132px;
@@ -3011,6 +3016,234 @@ footer .footer-menu-list li:hover a {
   .header .cabinet_btns .btn .product-counter::before {
     width: 18px;
     height: 18px;
+  }
+  .hamburger-menu {
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    background-color: transparent;
+    height: 53px;
+    width: 53px;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    z-index: 99;
+  }
+  .hamburger-menu span {
+    position: absolute;
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    background: #333440;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .hamburger-menu span:before {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    background-color: #fff;
+    height: 3px;
+    width: 25px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background: #333440;
+  }
+  .hamburger-menu span:after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    background-color: #fff;
+    height: 3px;
+    width: 25px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background: #333440;
+  }
+  .hamburger-menu.active span {
+    background-color: transparent;
+  }
+  .hamburger-menu.active span:before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 0;
+  }
+  .hamburger-menu.active span:after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 0;
+  }
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: auto;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 2px 24px black;
+            box-shadow: 0px 2px 24px black;
+    z-index: 99;
+  }
+  .mobile-menu.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mobile-menu_top {
+    max-width: 100%;
+    margin: 0 16px;
+    border-bottom: none;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mobile-menu .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+  }
+  .mobile-menu .close::after, .mobile-menu .close::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #333440;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+            transform: translate(-50%, -50%) rotate(-45deg);
+    border-radius: 2px;
+  }
+  .mobile-menu .close::before {
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+            transform: translate(-50%, -50%) rotate(45deg);
+  }
+  .mobile-menu .exit {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333440;
+    text-decoration: none;
+  }
+  .mobile-menu .project-support {
+    padding: 16px;
+    margin-top: auto;
+  }
+  .mobile-menu .project-support > div {
+    padding-top: 16px;
+    border-top: 1px solid #e5e5e5;
+  }
+  .mobile-menu .project-support img {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+  }
+  .mobile-menu .project-support .flex-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 16px;
+  }
+  .mobile-menu .project-support .flex-row a:last-of-type {
+    width: 100%;
+  }
+  .mobile-menu .project-support .info > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #333440;
+  }
+  .mobile-menu .project-support .info > div .bold {
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .mobile-menu .project-support .info a {
+    text-decoration: none;
+    color: #000;
+  }
+  .mobile-menu .project-support .info p {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 14px;
+    margin-bottom: 4px;
+    color: #808080;
+  }
+  .mobile-menu .project-support .info p.black {
+    color: #000;
+  }
+  .mobile-menu_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 30px !important;
+  }
+  .mobile-menu_list li {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 18px;
+    position: relative;
+    bottom: -1px;
+    padding-bottom: 10px;
+  }
+  .mobile-menu_list li::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 8px 8px 8px;
+    border-color: #2E569F transparent #2E569F transparent;
+    -webkit-filter: drop-shadow(0 0 0 #000);
+            filter: drop-shadow(0 0 0 #000);
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    opacity: 0;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  .mobile-menu_list li.active {
+    color: #2E569F;
+    border-bottom: 2px solid #2E569F;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  .mobile-menu_list li.active::before {
+    opacity: 1;
   }
   footer .content-wrapper {
     padding: 20px 20px;
@@ -3721,7 +3954,7 @@ footer .footer-menu-list li:hover a {
   .header .protoria_logo {
     max-width: 60px;
     height: 14px;
-    margin-left: 40px;
+    margin-left: 0;
   }
   .header .samsung_logo {
     width: 80px;
@@ -3816,8 +4049,8 @@ footer .footer-menu-list li:hover a {
   .mobile-menu_top {
     max-width: 100%;
     margin: 0 16px;
-    border-bottom: 1px solid #E7E7E7;
-    height: 52px;
+    border-bottom: none;
+    height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3902,7 +4135,6 @@ footer .footer-menu-list li:hover a {
     color: #000;
   }
   .mobile-menu .project-support .info p {
-    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 11px;
     line-height: 14px;

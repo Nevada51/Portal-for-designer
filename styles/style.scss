@@ -36,9 +36,9 @@ body {
     background-color: #fff;
     // min-height: 100vh;
 }
-.main{
+// .main{
     // height: calc(100% - 143px)
-}
+// }
 .content-wrapper{
     max-width: 1460px;
     width: 100%;
@@ -69,6 +69,7 @@ body {
     }
     .left-side{
         display: flex;
+        align-items: center;
     }
     .cabinet_btns{
         display: flex;
