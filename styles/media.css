@@ -18,6 +18,18 @@
   }
 }
 
+@media (max-width: 1450px) {
+  .header .project-support img {
+    display: none;
+  }
+  .header .project-support .info .phone {
+    margin-left: 5px;
+  }
+  .header .project-support .info {
+    max-width: 200px;
+  }
+}
+
 @media (max-width: 1224px) {
   .header .header_container {
     padding: 20px 0;

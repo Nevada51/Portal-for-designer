@@ -23,7 +23,30 @@ $accent-color: #2E569F;
     
     }
 }
-
+@media (max-width: 1450px) {
+    .header{
+        .protoria_logo {
+            max-width: 100px;
+            height: 25px;
+        }
+        .samsung_logo{
+            width: 142px;
+            height: 40px;
+        }
+    } 
+    .header .project-support{
+        margin-left: 18px;
+        img{
+            display: none;
+        }
+        .info .phone{
+            margin-left: 5px;
+        }
+        .info{
+            max-width: 200px;
+        }
+    } 
+}
 @media (max-width: 1224px) {
     
     // ----- хедер ----
