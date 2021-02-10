@@ -2986,6 +2986,17 @@ footer .footer-menu-list li:hover a {
 }
 
 @media (max-width: 1450px) {
+  .header .protoria_logo {
+    max-width: 100px;
+    height: 25px;
+  }
+  .header .samsung_logo {
+    width: 142px;
+    height: 40px;
+  }
+  .header .project-support {
+    margin-left: 18px;
+  }
   .header .project-support img {
     display: none;
   }
@@ -4045,7 +4056,7 @@ footer .footer-menu-list li:hover a {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-color: #fff;
     z-index: 99;
   }

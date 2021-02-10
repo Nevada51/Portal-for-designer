@@ -19,6 +19,17 @@
 }
 
 @media (max-width: 1450px) {
+  .header .protoria_logo {
+    max-width: 100px;
+    height: 25px;
+  }
+  .header .samsung_logo {
+    width: 142px;
+    height: 40px;
+  }
+  .header .project-support {
+    margin-left: 18px;
+  }
   .header .project-support img {
     display: none;
   }
@@ -280,6 +291,10 @@
     opacity: 0;
     -webkit-transition: all .3s;
     transition: all .3s;
+  }
+  .mobile-menu_list li::before a {
+    text-decoration: none;
+    color: #000;
   }
   .mobile-menu_list li.active {
     color: #2E569F;
@@ -1078,7 +1093,7 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-color: #fff;
     z-index: 99;
   }
